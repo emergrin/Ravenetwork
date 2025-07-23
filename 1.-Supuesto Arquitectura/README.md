@@ -8,7 +8,7 @@ Esta prueba técnica está pensada para evaluar tu capacidad de análisis, dise�
 
 Una fábrica va a ser totalmente reestructurada para robotizarla y dotarla de un nuevo sistema. Necesita una arquitectura **resiliente, segura y organizada** para cubrir todas sus necesidades operativas **on-premise**.
 
-!(fábrica)[./testraven.png]
+![fábrica](./testraven.png)
 
 La fábrica cuenta con:
 
