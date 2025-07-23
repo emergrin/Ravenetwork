@@ -1,0 +1,57 @@
+dn: dc=evilcorp,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: Evil Corp
+dc: evilcorp
+
+dn: ou=People,dc=evilcorp,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Groups,dc=evilcorp,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: uid=alice,ou=People,dc=evilcorp,dc=com
+objectClass: inetOrgPerson
+uid: alice
+sn: Smith
+givenName: Alice
+cn: Alice Smith
+mail: alice@evilcorp.com
+userPassword: {SSHA}d1Ni2k3fJGjJ8ExAMPLE
+
+dn: uid=bob,ou=People,dc=evilcorp,dc=com
+objectClass: inetOrgPerson
+uid: bob
+sn: Johnson
+givenName: Bob
+cn: Bob Johnson
+mail: bob@evilcorp.com
+userPassword: {SSHA}d1Ni2k3fJGjJ8ExAMPLE
+
+dn: uid=carol,ou=People,dc=evilcorp,dc=com
+objectClass: inetOrgPerson
+uid: carol
+sn: Lee
+givenName: Carol
+cn: Carol Lee
+mail: carol@evilcorp.com
+userPassword: {SSHA}d1Ni2k3fJGjJ8ExAMPLE
+
+dn: cn=engineering,ou=Groups,dc=evilcorp,dc=com
+objectClass: groupOfNames
+cn: engineering
+member: uid=alice,ou=People,dc=evilcorp,dc=com
+member: uid=bob,ou=People,dc=evilcorp,dc=com
+
+dn: cn=hr,ou=Groups,dc=evilcorp,dc=com
+objectClass: groupOfNames
+cn: hr
+member: uid=carol,ou=People,dc=evilcorp,dc=com
+
+dn: cn=admins,ou=Groups,dc=evilcorp,dc=com
+objectClass: groupOfNames
+cn: admins
+member: uid=alice,ou=People,dc=evilcorp,dc=com

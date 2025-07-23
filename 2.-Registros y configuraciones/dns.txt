@@ -1,0 +1,22 @@
+$TTL 86400
+@   IN  SOA ns1.evilcorp.com. admin.evilcorp.com. (
+        2025072301 ; Serial (YYYYMMDDNN)
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400 )    ; Minimum TTL
+    IN  NS  ns1.evilcorp.com.
+    IN  NS  ns2.evilcorp.com.
+ns1             IN  A       192.0.2.10
+ns2             IN  A       192.0.2.11
+mail            IN  A       192.0.2.20
+web             IN  A       192.0.2.30
+vpn             IN  A       192.0.2.40
+mail            IN  AAAA    2001:db8:0:1::20
+web             IN  AAAA    2001:db8:0:1::30
+@               IN  MX 10   mail.evilcorp.com.
+smtp            IN  CNAME   mail.evilcorp.com.
+imap            IN  CNAME   mail.evilcorp.com.
+www             IN  CNAME   web.evilcorp.com.
+ftp             IN  A       192.0.2.35
+dev             IN  CNAME   web.evilcorp.com.
